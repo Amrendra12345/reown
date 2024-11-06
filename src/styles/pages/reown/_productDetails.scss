@@ -1,0 +1,320 @@
+@use '../../utils' as u;
+
+.productDetails{
+    .page_card{
+        box-shadow: none;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: u.rem(10) u.rem(20);
+        &__figure{
+            .figure{
+            width: u.em(380);
+            border:1px solid var(--rd-border-color);
+            height: 250px;
+            padding: u.rem(10);
+            img{
+                width: 100%;
+                max-height: 230px;
+                display: block;
+                margin-inline: auto;
+                object-fit: contain;
+            }
+        }
+            .smallImg{
+                
+                display: grid;
+                width: 100%;
+                height: 45px;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 5px;
+                margin: 5px 0;
+                background-color: red;
+                position: relative;
+                z-index: 99;
+                img{
+                    padding: 4px;
+                    border:1px solid #ccc;
+                    width: 100%;
+                    max-height: 40px;
+                    display: block;
+                    margin-inline: auto;
+                    object-fit: contain;
+                }
+            }
+        }
+        &__contents{
+            width: calc(100% - u.em(380));            
+            .pageTitle{
+                margin-top: 0;
+                padding-left: 1px;
+                p{
+                    font-weight: 600;
+                text-transform: none;
+                color: var(--rd-text-dark-color);
+                
+                }
+            }
+            .content{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: u.rem(10) u.rem(50);
+                &__product{
+                    width: 55%;
+                    .product_values{
+                        margin-top: u.rem(15);
+                        margin-left: -3px;
+                        p{
+                            color: var(--rd-orange-600);
+                            font-weight: 700;
+                            font-size: u.rem(16);
+                            svg{
+                                vertical-align: middle;
+                                font-size: u.rem(16);
+                                margin-top: -2px;
+                            }
+                            span{
+                                
+                                margin-left:- u.rem(6);
+                            }
+                        }
+                    }
+                    .pincode{
+                        position: relative; 
+                        margin-bottom: u.rem(15);                      
+                        p{
+                            color: var(--rd-text-dark-color);
+                        }                        
+                        .material{
+                            margin: u.rem(5) 0 u.rem(1);
+                            max-width: u.em(170);
+                            .map_icon{
+                                position: absolute;
+                                right: u.rem(2);
+                                top:u.rem(12);
+                                z-index: 9;
+                                svg{
+                                    color: var(--rd-orange-600);
+                                }
+                            }
+                            input{
+                                font-weight: 700;
+                                letter-spacing: 2px;
+                                color: var(--rd-text-dark-color);
+                            }
+                        }
+                        .success, .erorr{
+                            font-size: u.rem(12);
+                            font-weight: 500;
+                            color: var(--rd-success-color);
+                        }
+                        .erorr{
+                            color:var(--rd-error-color);
+                            font-weight: 500;
+                        }
+                    }
+                    .freedelivery{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: u.rem(5) u.rem(20);
+                        &__icons{
+                            color: var(--rd-orange-600);
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: u.rem(2) u.rem(3);
+                            p{
+                                margin-bottom: 0;
+                                font-size: u.rem(12);
+                                color: var(--rd-text-muted);
+                            }
+                        }
+                    }
+                }
+              &__buyback{
+                width: 44%;
+                
+                .buyback{
+                    margin-top: u.rem(10);                    
+                    width: 100%;
+                    border:1px solid var(--rd-border-color);
+                    position: relative;
+                    border-radius: u.rem(2);
+                  
+                    .assured{
+                        position: absolute;
+                        top:- u.rem(10);
+                        left: u.rem(20);
+                        font-size: u.rem(13);
+                        font-weight: 400;
+                        color: var(--rd-text-color);
+                        span{
+                            background-color: var(--rd-white-color);
+                            padding: u.rem(3) u.rem(8);
+                        }
+                      
+                    }
+                    .table{
+                        margin-top: u.rem(10);
+                        margin-bottom: 0;
+                        border-color: transparent;
+                        &>tbody{
+                            &>tr{
+                                &:nth-of-type(odd){
+                                  background-color: var(--rd-gray-100);
+                                }
+                                &>td{
+                                    font-size: u.rem(13);
+                                    color: var(--rd-text-color); 
+                                    border-color: transparent;
+                                    span{
+                                        display: block;
+                                        &:nth-of-type(1){
+                                            color: var(--rd-text-dark-color);                                          
+                                        }
+                                        &:nth-of-type(2){
+                                            color: var(--rd-text-color); 
+                                        }
+                                    }
+                                    &:nth-of-type(2){
+                                        color: var(--rd-text-dark-color);
+                                    } 
+                                }
+                            }
+                        }                      
+                    }
+
+                }
+              }
+            }
+            .next-btn{
+                .btn{
+                    padding: u.rem(8) u.rem(15);
+                    text-transform: uppercase;
+                    img{
+                       filter:brightness(0) invert(1);
+                       margin-right: u.rem(5);
+                       vertical-align: middle;
+                       margin-top: - u.rem(5);
+                    }                    
+                }
+            }
+            .customization{
+                margin-top:- u.rem(35);
+                .btn-edit{
+                    background-color: #fff;
+                    border-color: transparent;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-size: u.rem(14);
+                    cursor: pointer;
+                    svg{
+                        vertical-align: middle;
+                        font-weight: 400;
+                        transition: all 0.3s;
+                    }
+                    &.active{
+                        svg{
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+                &__items{
+                    margin-top: 3px;
+                    padding-left: 2px;
+                    display: none;
+                    transition: all 0.5s ease-in-out;                    
+                    .pageTitle{
+                        margin-bottom: u.rem(2);
+                        p{
+                            margin-bottom: 0;
+                            color: var(--rd-orange-600);
+                        }
+                    }
+                    .table{
+                        width:u.em(600);
+                        &>tbody{
+                            &>tr{
+                               &:nth-of-type(odd){
+                                background-color: var(--rd-gray-100);
+                               }
+                                &>td{
+                                    border-color: transparent;
+                                    font-size: u.rem(12);
+                                    font-weight: 600;
+                                    border-bottom-color: rgba(250, 77, 9, 0.03);
+                                    &:nth-of-type(1){
+                                        width:calc(u.em(460) - calc(u.em(160) + u.em(60)));
+                                      }
+                                  &:nth-of-type(2){
+                                    width: u.em(160);
+                                    //background-color: var(--rd-orange-100);
+                                    span{
+                                        padding: u.rem(5) u.rem(10);
+                                        //display: block;
+                                        background-color:rgba(250, 77, 9, 0.03);
+                                        span{
+                                            color: var(--rd-orange-600);
+                                            font-weight: 700;                                           
+                                            background-color: transparent;
+                                            &:nth-of-type(1){
+                                                padding: 2px 6px 4px 0px;
+                                              }
+                                            &:nth-of-type(2){
+                                              padding: 2px 13px 4px 0px;
+                                            }
+                                        svg{
+                                            vertical-align: middle;
+                                            margin-right: -4px;
+                                        }
+                                        }
+                                    }
+                                  }
+                                  &:nth-of-type(3){
+                                    width: u.em(60);
+                                  }
+                                }
+                            }
+                        }
+                    }
+                    &.active{
+                        display: block;                        
+                    }
+                }
+            }
+        }
+    }
+    &__tab{
+        margin-top: u.rem(20);
+      .tab_menu{
+        background-color: var(--rd-gray-100);     
+         ul{
+            display: flex;
+            gap: u.rem(5) u.rem(10);
+            justify-content: flex-start;
+            align-items: center;
+            li{
+                cursor: pointer;
+                padding: u.rem(5) u.rem(10);
+                display: block;
+              &.active{
+                 color: var(--rd-white-color);
+                 background-color: var(--rd-orange-600);
+              }
+            }
+         }
+      }
+      .tab_content{
+         .tab-pane{
+             display: none;
+            &.active{
+                display: block;
+            }
+         }
+      }
+    }
+}

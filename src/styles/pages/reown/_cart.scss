@@ -1,0 +1,298 @@
+@use '../../utils' as u;
+.cart{
+    .page_card{
+        box-shadow: none;       
+    }
+    &__delivery{
+        @include u.breakpoint(sm){
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: u.rem(10) u.rem(30); 
+        }       
+        .page_title{
+            margin-bottom: u.rem(0);
+            p{
+            color: var(--rd-text-dark-color);
+            text-transform: none;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;            
+            gap: u.rem(10);
+            margin-bottom: u.rem(5);           
+          }
+        }
+        &__address{
+            width: 100%;
+            @include u.breakpoint(sm){
+                width: calc(100% - u.em(400));    
+            } 
+                 
+            &_content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: u.rem(10);
+                
+                .deliveyAddress{
+                   
+                    .address{
+                        padding: 0 u.rem(5);
+                    }
+                    .edit_address{
+                        padding: 0 u.rem(5);
+                        .btn{
+                            text-transform: none;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            border:1px solid var(--rd-gray-100);
+                            transition: all 0.5s;
+                            svg{
+                                vertical-align: middle;
+                                margin-top: - u.rem(3);
+                            }
+                            &:hover{
+                                background-color: var(--rd-gray-100);
+                            }
+                          &.active{
+                             svg{
+                                transform: rotate(90deg);
+                             }
+                          }
+                        } 
+                    }
+                }
+                .delivery_img{
+                    img{
+                        margin: auto;
+                        display: block;
+                        width: 100%;
+                        height: u.rem(90);
+                        object-fit: contain;
+                    }
+                }
+            }
+          
+        }
+       
+        &__cartItems{
+            .cartItem{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: u.rem(20);
+                padding: u.rem(8) 0;
+                .cart_img{
+                    width: u.em(100);
+                    height: u.rem(80);
+                }
+                .cart_content{
+                    width: calc(100% - u.em(100) + u.em(60));
+                   
+                    p{
+                        font-size: u.rem(13);
+                        margin-bottom: u.rem(2);
+                    }
+                    .pageTitle{
+                      margin: 0 0 u.rem(6);
+                        p{
+                            text-transform: none;
+                            color: var(--rd-text-dark-color);
+                            font-weight: 600;
+                            font-size: u.rem(13);
+                        }
+                    }
+                    .quantityPrices{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: u.rem(25);
+                        .quantity{
+                            width: u.em(200);
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: u.rem(25);
+                            p{
+                                &:nth-of-type(2){
+                                    background-color: var(--rd-gray-200);
+                                    padding: u.rem(3) u.rem(10);
+                                    border-radius: u.rem(2);
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                        .prices{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: u.rem(10);
+                            p{
+                                &:nth-of-type(2){
+                                    font-weight: 700;
+                                    font-size: u.rem(14);
+                                    color: var(--rd-orange-600);
+                                    svg{
+                                        vertical-align: middle;
+                                        margin-top: - u.rem(3);
+                                    }
+                                    span{
+                                       
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .deliveryBy{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: u.rem(10);
+                        p{
+                            &:nth-of-type(2){
+                                background-color: transparent;
+                                padding: u.rem(1) u.rem(2);
+                                border-radius: u.rem(2);
+                                font-weight: 700;
+                                color: var(--rd-success-color);
+                            }
+                        }
+                    }
+
+                }
+                .cart_remove{
+                    width: u.em(60);
+                    height: auto;
+                    text-align: center;
+                    svg{
+                        font-size: u.rem(18);
+                        color: var(--rd-orange-600);
+                    }
+                }
+            }
+            .backToProductBtn{
+                display: none;
+                @include u.breakpoint(sm){
+                    display: block;
+                }
+            }
+        }
+
+        .shipping__Address{          
+          padding-top: u.rem(4);
+          display: none;
+          transition: all 0.8s linear;
+          &.active{
+             display: block;
+          }
+        }
+        .billingAddress{
+            display: none;
+            transition: all 0.8s linear;
+            &.active{
+                display: block;
+            }
+        }
+        .billingBusiness{
+            display: none;
+            transition: all 0.8s linear;
+            &.active{
+                display: block;
+            }
+        }
+
+        &__prices {
+            width: 100%;
+            @include u.breakpoint(sm){
+               width: u.em(400);
+            }
+            
+            .haveCoupon {
+                padding: u.rem(10) u.rem(4) u.rem(25);
+                &__labels {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: u.rem(5);
+                    margin-bottom: u.rem(5);
+                    svg {
+                        color: var(--rd-orange-600);
+                        font-size: u.rem(18);
+                    }
+                    p {
+                        margin-bottom: 0;
+                        color: var(--rd-text-dark-color);
+                        font-weight: 600;
+                        font-size: u.rem(13);
+                    }
+                }
+                &__form-group{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 0;
+                    .btn{
+                        padding: u.rem(6) u.rem(10);
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                }
+            }
+            .priceDetails{                
+                .pageTitle{
+                    margin-top: u.rem(4);
+                    p{
+                        color: var(--rd-text-dark-color);
+                        text-transform: none;
+                        font-weight: 600;
+                    }
+                }
+                .totalPrice,.couponDiscount,.deliveryCharges,.total{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: u.rem(10);
+                    svg{
+                        vertical-align: middle;
+                        margin-top: - u.rem(2);
+                    }
+                }
+                .totalPrice{
+                    padding-top: u.rem(8);
+                }
+                .total{
+                    p{
+                        color: var(--rd-text-dark-color);
+                        font-weight: 700;
+                    }
+                }
+                .deliveryCharges{
+                    p{
+                        &:nth-of-type(2){
+                            color: var(--rd-success-color);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .btn-yellow{
+                //display: block;
+                @include u.breakpoint(sm){
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__breadcrumb{
+           
+        &.sticky{
+            position: sticky;
+            top:u.rem(40);
+            z-index: 5;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            background-color: var(--rd-white-color);
+        }
+    }
+}

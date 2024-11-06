@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<title>voucher</title>
+	<defs>
+		<image  width="16" height="10" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAAXNSR0IB2cksfwAAAF1QTFRFAAAA/7ca/7kc/7ge/7wb/7kd/7kd/7od/7kc/7ge//PY/8dK/8pV/+Gd/7oc/7wb/7kd/8dL/8pX//nr/8tX/7Qe/7gc/8lS/8xc/7kd/+Kh//PX/7ke/7oc/7keD+3KMgAAAB90Uk5TACd1dybA/7+Hif////+IE/r/////ERL///n//74lgOAdw0QAAABYSURBVHicZY1ZDoAgEEMrbqjIIuIO9z+mjDEE4/tp85LOAAUrE6wCUDcZbRQ8FzyKjko/iJFSAkpTMZOdKbXD8ojVboZyd4CkcghzvpP/0c/bKwofZCJ43HHUBT/h8+apAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="3"/>
+</svg>

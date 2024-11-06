@@ -1,0 +1,70 @@
+@use '../utils/functions' as f;
+
+$font-family: 'Muli';
+$default-font-size:f.rem(14);
+$prefix: 'rd-';
+
+$facebook:'#3b5998';
+$twitter:'#1da1f2';
+$instagram:'#c32aa3';
+$clientservices:'#f8d775';
+
+$white:    #fff;
+$gray-100: #fbfbfb;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$orange:hsl(17, 87%, 55%);
+$orange-100: f.tint-color($orange, 40%);
+$orange-200: f.tint-color($orange, 30%);
+$orange-300: f.tint-color($orange, 20%);
+$orange-400: f.tint-color($orange, 10%);
+$orange-500: $orange;
+$orange-600: f.shade-color($orange, 10%);
+$orange-700: f.shade-color($orange, 20%);
+$orange-800: f.shade-color($orange, 30%);
+$orange-900: f.shade-color($orange, 40%);
+$text-muted-color:#818181;
+$blue: #0055d3;
+$body-bg:#f9f5f1;     //#fdf9f6;
+$success-color:#34a853;
+$error-color:#dc3545;
+$text-color:#717171;
+$text-dark-color:#313131;
+$border-color:$gray-400;
+$social-icons:(
+    'facebook':$facebook,
+    'twitter': $twitter,
+    'instagram' :$instagram,
+    'clientservices': $clientservices,
+);
+
+$grays:(
+    'gray-100': $gray-100,
+    'gray-200': $gray-200,
+    'gray-300': $gray-300,
+    'gray-400': $gray-400,
+    'gray-500': $gray-500,
+    'gray-600': $gray-600,
+    'gray-700': $gray-700,
+    'gray-800': $gray-800,
+    'gray-900': $gray-900,
+);
+
+$oranges:(
+    'orange-100': $orange-100,
+    'orange-200': $orange-200,
+    'orange-300': $orange-300,
+    'orange-400': $orange-400,
+    'orange-500': $orange-500,
+    'orange-600': $orange-600,
+    'orange-700': $orange-700,
+    'orange-800': $orange-800,
+    'orange-900': $orange-900,
+)

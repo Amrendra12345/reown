@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="23" height="23">
+	<title>address__icon-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #313131;stroke-linecap: round;stroke-linejoin: round;stroke-width: .5 } 
+		.s1 { fill: #f89303 } 
+		.s2 { fill: none;stroke: #313131;stroke-linecap: round;stroke-linejoin: round;strokeWidth: .5;stroke-dasharray: 1.62 } 
+		.s3 { fill: #1dbdc0 } 
+		.s4 { fill: #313131 } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" class="s0" d="m19.6 15l-5.4 5.4-5.3-5.2"/>
+		<path id="Layer" class="s0" d="m8.9 15.2c-1.2-1.3-2-3.1-2-5.1 0-4 3.3-7.3 7.3-7.3 4 0 7.3 3.3 7.3 7.3 0 1.9-0.7 3.6-1.9 4.9"/>
+		<path id="Layer" fill-rule="evenodd" class="s1" d="m18.6 10c0 2.5-1.9 4.5-4.4 4.5-2.5 0-4.5-2-4.5-4.5 0-2.4 2-4.4 4.5-4.4 2.5 0 4.4 2 4.4 4.4z"/>
+		<path id="Layer" class="s0" d="m18.6 10c0 2.5-1.9 4.5-4.4 4.5-2.5 0-4.5-2-4.5-4.5 0-2.4 2-4.4 4.5-4.4 2.5 0 4.4 2 4.4 4.4zm-6.4 0c0-1.1 0.9-1.9 2-1.9"/>
+		<path id="Layer" class="s2" d="m14.1 20.4h-7.8l-3.3-1.9"/>
+		<path id="Layer" fill-rule="evenodd" class="s3" d="m3 15.1c0 0.4-0.4 0.7-0.7 0.7-0.4 0-0.8-0.3-0.8-0.7 0-0.4 0.4-0.7 0.8-0.7 0.3 0 0.7 0.3 0.7 0.7z"/>
+		<path id="Layer" class="s0" d="m3 15.1c0 0.4-0.4 0.7-0.7 0.7-0.4 0-0.8-0.3-0.8-0.7 0-0.4 0.4-0.7 0.8-0.7 0.3 0 0.7 0.3 0.7 0.7z"/>
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="s4" d="m2.3 18.1v-2.3"/>
+			<path id="Layer" class="s0" d="m2.3 18.1v-2.3"/>
+		</g>
+	</g>
+</svg>

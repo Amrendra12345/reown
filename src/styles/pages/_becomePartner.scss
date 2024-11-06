@@ -1,0 +1,225 @@
+@use '../utils' as u;
+
+// .beacomePartner{    
+//     margin: u.rem(20) 0 u.rem(20);
+//     &__figure{
+//         background-image: url('/images/become.webp');
+//         max-height: 50vh;
+//         min-height: 49vh;
+//         width: 100%;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         border-radius: 0.25rem;
+//         margin-bottom: 0;
+//         .caption{
+//             h2{
+//             font-size:clamp(u.rem(16),u.rem(16) + 2vw, u.rem(48));
+//             margin-bottom: u.rem(10);
+//             text-align: center;
+//             font-weight: 700;
+//             color: var(--rd-white-color);
+//             word-spacing: 3px;
+//             letter-spacing: 1px;
+//             text-transform: uppercase;
+//             text-shadow: -1px -1px 0 rgba(238, 84, 24, 0.46), 1px -1px 0 rgba(238, 84, 24, 0.37), -1px 1px 0 rgba(238, 84, 24, 0.68), 1px 3px 0 rgba(238, 84, 24, 0.25);
+//             }
+//         }
+//     }
+//     &_btn{
+//         text-align: center;
+//     }
+//     &__content{
+//         padding: u.rem(20) 0 u.rem(30);
+//     }
+// }
+
+
+
+// .warehouse{
+//     ul{
+//         list-style: disc;
+//         list-style-position: inside;
+//         li{
+//            color: var(--rd-text-color);
+//            font-size: var(--rd-font-default-size);
+//         }
+//     }
+//     .table{
+//         margin-bottom: u.rem(40);
+//         thead{
+//             background-color: var(--rd-gray-800);
+//             border-color:var(--rd-gray-800) !important;
+//             color: var(--rd-white-color);
+
+//         }
+//         tr{
+//            th, td{
+//              &:first-child{
+//                 width: 45%;
+//              }
+//              &:last-child{
+//                 width: 55%;
+//              }
+//            }
+//         }
+//     }
+//   &__form{
+//      width:min(100%, u.em(700));
+//      margin-inline: auto;
+//      border:1px solid transparent;
+//      border-radius: u.rem(5);
+//      padding: u.rem(20);
+//      box-shadow: rgba(60,64,67,.3) 0px 1px 2px 0px, rgba(60,64,67,.15) 0px 2px 6px 2px;
+//   }
+// }
+
+.beacomePartner{
+    margin: u.rem(20) 0;    
+    &__figure{
+        background-image: url('/images/become.webp');
+        max-height: 50vh;
+        min-height: 49vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.25rem;
+        margin-bottom: 0;
+        .caption{
+            h2{
+            font-size:clamp(u.rem(16),2vw, u.rem(48));
+            margin-bottom: u.rem(10);
+            text-align: center;
+            font-weight: 700;
+            color: var(--rd-white-color);
+            word-spacing: 3px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: -1px -1px 0 rgba(238, 84, 24, 0.46), 1px -1px 0 rgba(238, 84, 24, 0.37), -1px 1px 0 rgba(238, 84, 24, 0.68), 1px 3px 0 rgba(238, 84, 24, 0.25);
+            }
+        }
+    }
+    .page_card{
+       padding: u.rem(20) u.rem(20);       
+        p{
+            color: var(--rd-text-dark-color);
+        }
+        .content{
+            margin: u.rem(20) 0;
+            .warehouse_Btn{
+                text-align: center;
+                .btn{
+                    padding: u.rem(8) u.rem(12);
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    word-spacing: 5px;
+                    &.active{
+                        background-color: var(--rd-gray-900);
+                        border-color: var(--rd-gray-900);
+                    }
+                }
+
+            }           
+        }
+        .warehousePartner{
+            display: none;
+            transition: all 0.5s linear;
+            .heading{
+                h1{
+                    text-transform: capitalize;
+                }
+            }
+            &__ul{
+                p{
+                    font-weight: 700;
+                    color: var(--rd-text-dark-color);
+                    margin-bottom: u.rem(3);
+                }
+                ul{
+                    list-style: disc;
+                    list-style-position: inside;
+                }
+            }
+            &__commonQuestion{
+                margin-top: u.rem(16);
+
+                .table{
+                    &>thead{
+                        &>tr{
+                            background-color: var(--rd-gray-900);
+                            &>td{
+                                color: var(--rd-white-color);  
+                                text-align: center;  
+                                padding: u.rem(5) 0;                           
+                                &:nth-of-type(1){
+                                    width: 45%;
+                                }
+                                &:nth-of-type(2){
+                                    width: 55%;
+                                }
+                            }
+                        }
+                    }
+                    &>tbody{
+                        &>tr{
+                            &:nth-of-type(odd){
+                                background-color: var(--rd-gray-200);
+                            }
+                            &>td{
+                                color: var(--rd-text-dark-color);
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+            &__form{
+                margin:u.rem(20) u.rem(10) 0;
+                width: min(100%, u.em(700));
+                margin-inline: auto;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+                padding: u.rem(20);
+                .pageTitle{
+                    p{
+                        text-transform: none;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &.active{
+                display: block;
+            }
+        }
+   }
+   .next-btn{
+      margin: 0;
+      text-align: center;
+   }
+}
+.marketplace{
+    .figure{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .content{
+        padding: u.rem(30) u.rem(20) u.rem(10);
+        p{
+            color: var(--rd-text-dark-color);
+        }
+    }
+    .heading{
+        text-align: center;      
+        h2{
+            color: var(--rd-text-dark-color);
+            text-transform: capitalize;
+        }
+    }
+}

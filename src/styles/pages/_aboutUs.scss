@@ -1,0 +1,83 @@
+@use '../utils' as u;
+.about_us{    
+    .pageTitle{        
+        text-align: center;
+        justify-content: center;
+        p{
+            font-size: clamp(u.rem(13),2vw, u.rem(14)); 
+            font-weight: 700;
+            color:var(--rd-text-drak-color);
+            margin-bottom: 0;
+            text-transform: capitalize;
+        }
+    }
+    p{
+        color:var(--rd-text-drak-color);
+    }
+}
+
+.our-teams{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    gap:u.rem(5);
+    margin-top: u.rem(20);
+    @include u.breakpoint(xs){
+       grid-template-columns: repeat(3, 1fr);  
+       gap:u.rem(10);
+    }
+    @include u.breakpoint(sm){
+        grid-template-columns: repeat(4, 1fr); 
+        gap:u.rem(15); 
+     }
+     @include u.breakpoint(md){
+        grid-template-columns: repeat(5, 1fr);  
+     }
+    .member{
+        flex: 5;
+        border:1px solid var(--rd-gray-400);
+        position: relative;
+        img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            object-fit: contain;
+            position: relative;
+            filter: grayscale(100%);
+            transition: all 0.5s;
+            border:1px solid #e2e2e2;
+            cursor: pointer; 
+        }
+        .caption{
+            text-align: center;
+            background-color:hsl(0deg 0% 0% / 50%);
+            position: absolute;
+            bottom: 0;            
+            left: 0;
+            width: 100%;        
+            padding: u.rem(5) 0;
+            height: u.rem(44);
+            transition: all 0.5s ease-in-out;
+            p{
+                margin-bottom: 0;
+                line-height: 1;
+                font-size: u.rem(14);
+                color: var(--rd-white-color);
+            }
+            span{
+                font-style: italic;
+                font-size: u.rem(14);
+                color: var(--rd-white-color);
+            }
+        }
+        &:hover{
+            img{
+              filter: grayscale(0); 
+            }
+            .caption{
+                height:u.rem(50);
+            }
+        }
+    }
+}

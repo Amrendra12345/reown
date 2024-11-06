@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Muli Light'), url('/font/Muli-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli Regular'), url('/font/Muli-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Muli';
+    font-style:italic;
+    font-weight: 400;
+    src: local('Muli Regular'), url('/font/Muli-Italic.woff') format('woff');
+}
+@font-face{
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Muli SemiBold'), url('/font/Muli-SemiBold.woff') format('woff');
+}    
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Muli Bold'), url('/font/Muli-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Muli ExtraBold'), url('/font/Muli-ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Muli Black'), url('/font/Muli-Black.woff') format('woff');
+}
+
+//@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900');

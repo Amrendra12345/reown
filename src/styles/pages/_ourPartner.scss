@@ -1,0 +1,45 @@
+@use '../utils' as u;
+
+.ourPartner{
+    .slider{
+        padding: u.rem(16) 0;
+        @include u.breakpoint-down(md){
+            padding: u.rem(6) 0;
+        }
+        &__card{
+            // border:1px solid var(--rd-gray-300);
+            margin-right: u.rem(10);
+            .cards{
+                box-shadow: 0px 1px 5px #333;
+                padding: u.rem(15) u.rem(5);
+                margin: u.rem(10);
+                border-radius: u.rem(2);
+                img{
+                        display: block;
+                        max-width: 90% !important;
+                        max-height: u.rem(50) !important;
+                        margin-inline: auto !important;
+                    }
+                .caption{
+                    margin-top: u.rem(15);
+                    p{
+                        margin-bottom: 0;
+                        &:first-child{
+                            color: var(--rd-orange-600);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .noteContent{
+        max-width: 80%;
+        margin-inline: auto;
+        p{
+            color: var(--rd-text-dark-color);
+        }
+        @include u.breakpoint-down(md){
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use '../utils' as u;
+.whyRecycles{
+    p{
+        color: var(--rd-text-dark-color);
+        strong{
+            font-weight: 600;
+        }
+    }
+}
+.whyRecycle{    
+    .items{
+        display: flex;
+        gap:u.rem(10);
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-inline: auto;
+        .item{   
+            width: 32.5%;
+            border:1px solid var(--rd-border-color);
+            border-radius: u.rem(4);
+            overflow: hidden;
+            
+            &__head{
+                background-color: var(--rd-gray-100);
+                text-align: center;
+                padding: u.rem(4) u.rem(5);
+                border-bottom:1px solid var(--rd-border-color);
+            }
+            &__body{
+                padding: u.rem(6) u.rem(10);
+                background-color: var(--rd-white-color);
+            }
+        }
+    }
+}

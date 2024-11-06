@@ -1,0 +1,33 @@
+@use '../utils' as u;
+.warehouses{
+    .page_card{
+        display: flex;
+        justify-content: flex-start;
+        gap: u.rem(0);
+        width: 100%;
+    }
+    &_content{
+        width: 30%;
+        padding: u.rem(40) 0 0 u.rem(20);
+        .pageTitle{
+            p{
+                text-transform: capitalize;
+                color: var(--rd-text-dark-color);
+            }
+        }
+        p{
+            color: var(--rd-text-dark-color);
+            line-height: 1.4;   
+        }
+    }
+    &_figure{
+       width: 70%;
+       padding: u.rem(20) u.rem(15);
+       .figure{
+           display: block;
+           position: relative;
+           min-height: u.rem(700);
+           max-height: u.rem(720);
+       }
+    }
+}

@@ -1,0 +1,36 @@
+
+@use '../../utils' as u;
+
+.deliveryAddress{    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: u.rem(10);
+    &__figure{
+        width: u.em(170);
+        height: auto;
+        border: 1px solid transparent;
+        padding: u.rem(5);
+    }
+    &__address{
+        width: calc(100% - u.em(350));
+        p{
+            padding-left: u.rem(10);
+            font-size: u.rem(13);
+        }
+        .pageTitle{
+            margin-top: 0;
+            justify-content: flex-start;
+            gap: u.rem(3);
+            p{
+                padding-left: 0;
+                text-transform: capitalize;
+                color: var(--rd-text-dark-color);
+                font-size: u.rem(13);
+                font-weight: 600;
+            }
+        }
+        
+
+    }
+}

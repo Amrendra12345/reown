@@ -1,0 +1,171 @@
+@use '../../utils' as u;
+.profile{
+    width: min(calc(100% - u.rem(5)), u.em(1100));
+    margin-inline: auto;
+    .page_card{
+        box-shadow: none;
+    }
+    &__container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: u.rem(10) u.rem(30);
+    }
+    &__aside{
+        width: min(100%, u.em(350));
+        .user{
+            &_profile{                  
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: u.rem(10) u.rem(10);              
+            }
+            &__img{
+                background-color: var(--rd-white-color);
+                width: u.em(100);
+                height:  u.em(100);
+                padding: 5px;
+                border:1px solid var(--rd-border-color);
+                border-radius: u.rem(2);
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    margin: auto;
+                }
+            }
+            &__content{
+                width: calc(100% - u.em(100));
+                .profileName{
+                    margin-top: 4px;
+                    span{
+                        &:nth-of-type(2){
+                            max-width: u.em(160);                            
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                p{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: u.rem(5);
+                    color: var(--rd-text-dark-color);
+                    font-weight: 500;
+                    span{
+                        display: block;
+
+                    }
+                    &.helper{
+                        font-size: u.rem(11);
+                        color: var(--rd-orange-600);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .personalInfo, .address,.kyc{
+            position: relative;
+            z-index: 9;
+            border:1px solid transparent;
+            .btn-profile{
+                padding: u.rem(5) u.rem(2);
+                color: var(--rd-text-dark-color);
+                width: 100%;
+                text-align: left;
+               
+            }
+            &.active{
+                border-color: var(--rd-orange-600);
+                z-index: 99;
+                background-color: #fff;
+                &::before{
+                    position: absolute;
+                    right: - u.rem(9);
+                    width: u.em(20);
+                    height: u.em(20);                  
+                    top:30%;
+                    content: '';
+                    border:u.em(10) solid var(--rd-orange-600);
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                    transform: rotate(45deg);
+                    z-index: -1;
+                }
+            }
+           
+        }
+    }
+    &__main{
+        width:calc(100% - u.em(350));
+        .perInfoDetails{
+            display: none;
+            .pageTitle{
+               margin-bottom: u.rem(10);
+                justify-content: center;
+                p{
+                    text-transform: none;
+                    color: var(--rd-text-dark-color);
+                }
+            }
+            .form-group{
+                .form-group-checkbox{
+                    label{
+                        margin-left: 3px;
+                        font-weight: 500;
+                        font-size: u.rem(12);
+                    }
+                }
+                &.radioInput{
+                    gap: u.rem(5) u.rem(8);
+                }
+            }
+            .next-btn{
+                text-align: center;
+            }
+            &.active{
+                display: block;
+            }
+        }
+        .perInfo_Address{
+            display: none;
+            .pageTitle{
+                justify-content: flex-start;
+                align-items: center;
+                p{
+                    text-transform: none;
+                    color: var(--rd-text-dark-color);
+                    margin-left: 4px;
+                }
+            }
+            &.active{
+                display: block;
+            }
+        }
+        .keyDetails{
+            display: none;
+            .form-group{
+                p{
+                    font-size: u.rem(12);
+                    span{
+                        color: var(--rd-text-dark-color);
+                        font-weight: 500;
+                    }
+                }
+            }
+            &.active{
+                display: block;
+            }
+        }
+
+        .billingAddress{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+    }
+}

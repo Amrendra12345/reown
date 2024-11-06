@@ -1,0 +1,85 @@
+@use '../utils' as u;
+
+.page_card{
+   
+.accordion{
+    &__item{
+        border:1px solid var(--rd-gray-200);
+        border-radius:u.rem(2);
+        margin-bottom: u.rem(5);
+        &__title{
+            background-color: var(--rd-gray-100);        
+            padding:u.rem(5) u.rem(15);
+            cursor: pointer;
+            transition: all 0.9s ease-in-out;
+            display: flex;
+            justify-content: space-between;
+             position: relative;
+            p{
+              margin-bottom: 0;    
+              color: var(--rd-text-dark-color);
+              font-weight: 500;                       
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top:30%;
+                right: u.rem(8);
+                width: u.em(8);
+                height: u.em(8);
+                border:1px solid var(--rd-gray-600);
+                border-top-color: transparent;
+                border-left-color: transparent;
+                transform: rotate(45deg);
+                transition: all 0.5s;
+                
+              }
+            &.active{
+                p{
+                    color: var(--rd-orange-500);                    
+                }
+                &::before{
+                    border-color: var(--rd-orange-500);
+                    border-top-color: transparent;
+                    border-left-color: transparent;    
+                    transform: rotate(225deg);                
+                }
+            }
+        }
+        &__content{
+            background-color: var(--rd-white-color);
+            border-top:1px solid var(--rd-gray-200);
+            padding:u.rem(10) u.rem(15);
+            transform: all 0.8s;
+            p{
+                margin-bottom: 0;
+                color: var(--rd-text-dark-color);
+            }
+            ul{
+                list-style: disc;
+                padding-left: u.rem(20);
+                li{
+                    padding-bottom: u.rem(8);
+                    &:last-child{
+                        margin-bottom: u.rem(5);
+                    }
+                }
+            }
+        }
+    &.active{
+            .accordion__item__title{
+                p{
+                    color: var(--rd-orange-500);
+                }
+                svg{
+                    color: var(--rd-orange-500);
+                    transform: rotate(180deg);
+                }
+            }
+            .accordion__item__content{
+                display: block;
+            }
+    }
+    }
+}
+}

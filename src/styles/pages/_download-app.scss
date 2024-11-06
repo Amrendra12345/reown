@@ -1,0 +1,89 @@
+@use '../utils' as u;
+.download-app{
+    width: min(100% - u.rem(20), u.em(700));
+    margin-inline: auto;
+    margin-top: u.rem(20);
+    background-color:transparent;
+   display: grid;
+   gap: u.rem(10);
+   grid-template-columns: repeat(1, 1fr);
+   @include u.breakpoint(sm){
+      grid-template-columns: repeat(3, 1fr);
+   }
+   &__input-group{ 
+      label{
+         font-size: u.rem(9);
+         font-weight: 700;
+         color: var(--rd-error-color);
+      }
+      .btnInpu{
+         position: relative; 
+         .form-control{
+            height:u.rem(42);
+            font-size: u.rem(14);
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--rd-text-dark-color);
+         } 
+         .btn-arrow{
+            position: absolute;
+            right: 0;
+            top:0;
+            height:u.rem(42);
+         }  
+      }
+      .success,.error{
+         font-size: u.rem(12) !important;
+         font-weight: 600;
+         line-height: 1;
+         margin-top: u.rem(3);
+      } 
+   }
+   &__btn-app{
+      label{
+         visibility: hidden;
+      }
+      .btn{
+         width: 100%;
+         .app{
+            display: flex;            
+            align-items: center;
+            gap: 0 u.rem(10);
+            .txt{
+               text-align: right;
+               span{
+                 font-size: u.rem(13);
+                 line-height: 1.2;
+                 display: block;
+                 margin: 0;
+                 &:nth-of-type(1){
+                  color: var(--rd-gray-400);                
+                 }
+               }
+            }
+            .icon{
+               margin-left: u.rem(20);
+            }
+            img{
+               background-color: var(--rd-gray-400);
+               padding: u.rem(2);
+               border:1px solid var(--rd-border-color);
+            }
+         }
+      }
+   }
+   &__qrcode{   
+      position: relative;   
+      .qrcode-img{  
+         @include u.breakpoint(sm){
+            text-align: left;
+         }       
+         img{
+            background-color: var(--rd-white-color);
+            padding: u.rem(2);
+            border:1px solid var(--rd-border-color)
+         }
+         
+      }
+   } 
+}

@@ -1,0 +1,27 @@
+@use 'variables' as v;
+:root{
+    --#{v.$prefix}body-bg: #{v.$body-bg};
+   --#{v.$prefix}success-color : #{v.$success-color};
+   --#{v.$prefix}error-color : #{v.$error-color};
+   --#{v.$prefix}text-color : #{v.$text-color};
+   --#{v.$prefix}white-color:#{v.$white};
+   --#{v.$prefix}black-color:#{v.$black};
+   --#{v.$prefix}border-color:#{v.$border-color};   
+   --#{v.$prefix}text-dark-color: #{v.$text-dark-color};
+    --#{v.$prefix}font-family:#{v.$font-family};
+    --#{v.$prefix}font-default-size:#{v.$default-font-size}; 
+    --#{v.$prefix}text-muted:#{v.$text-muted-color};    
+    --#{v.$prefix}blue:#{v.$blue};
+    
+    
+    @each $color, $value in v.$social-icons{
+        --#{v.$prefix}#{$color}: #{$value};
+    };
+
+    @each $color, $value in v.$grays {
+        --#{v.$prefix}#{$color}: #{$value};
+    };
+    @each $color, $value in v.$oranges {
+        --#{v.$prefix}#{$color}: #{$value};
+    }
+}

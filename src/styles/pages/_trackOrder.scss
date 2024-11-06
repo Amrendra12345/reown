@@ -1,0 +1,15 @@
+.trackOrder{
+    p{
+        color: var(--rd-text-dark-color);
+        strong{
+            font-weight: 600;
+        }
+    }
+    .figure{
+        position: relative;
+        display: block;
+        min-height: 59vh;
+        max-height: 60vh;
+        overflow: hidden;
+    }
+}

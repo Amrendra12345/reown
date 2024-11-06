@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>summary__icon-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #313131;stroke-linecap: round;stroke-linejoin: round;stroke-width: .7 } 
+		.s1 { fill: #f89303 } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m13.7 17.5v3.7h-9.4v-15.9h12.8v12.2zm0 3.7l3.4-3.7"/>
+		</g>
+		<path id="Layer" class="s0" d="m7.4 13.5h3.6m-3.6-2.1h5.4m-5.4 4.2h1.8"/>
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="s1" d="m20.9 5.7c0 2.3-1.8 4.2-4.1 4.2-2.2 0-4.1-1.9-4.1-4.2 0-2.2 1.9-4.1 4.1-4.1 2.3 0 4.1 1.9 4.1 4.1z"/>
+			<path id="Layer" class="s0" d="m20.9 5.7c0 2.3-1.8 4.2-4.1 4.2-2.2 0-4.1-1.9-4.1-4.2 0-2.2 1.9-4.1 4.1-4.1 2.3 0 4.1 1.9 4.1 4.1z"/>
+			<path id="Layer" class="s0" d="m18.4 4.7l-2.1 2.1-1.1-1.1"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,141 @@
+@use '../utils' as u;
+.contact_us{
+    p{
+        color: var(--rd-text-dark-color);
+        strong{
+            font-weight: 600;
+        }
+    }
+    &__figure{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: u.rem(20) u.rem(16) 0;
+        border:1px solid var(--rd-gray-200);
+        border-radius: u.rem(3);
+        @media (max-width:767px){
+            padding: u.rem(20) 0 0;
+            border-color: transparent;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+        h1{
+         font-size: clamp(u.rem(18),2vw, u.rem(24));
+         line-height: 1.2;
+         font-weight: 700;
+            span{
+                color: var(--rd-orange-600);
+            }
+        }
+        img{
+            margin: 0;
+            width: u.em(480);
+        }
+    }
+    &__topContact{
+        display: flex;
+        gap: u.rem(80);
+        align-items:flex-start;
+        justify-content: flex-start;
+        padding: u.rem(20) 0;
+        
+        @media (max-width:767px){
+            flex-direction: column;
+        }
+        .contact_form{
+            border-radius:u.rem(2);
+            width: 32%;
+            box-shadow:0 0 4px rgb(0 0 0 / 30%);
+            padding: u.rem(20) u.rem(15);            
+            @media (max-width:767px){
+               width: 100%;
+            }
+        }
+        .contact_withUs{
+            display: flex;
+            justify-content:space-between;
+            align-items:flex-start;
+            gap: u.rem(30);
+            width:68%;
+            padding: 0;
+            
+            .left_contact{
+                width: 50%;
+                .modal_link{
+                    color: var(--rd-orange-600);
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+            .right_contact{
+                width: 50%;
+                .mb-32{
+                    margin-bottom: u.rem(32);
+                }
+            }
+        }
+    }
+    &.overflow_hidden{
+        overflow: hidden !important;
+    }
+    .inquiry_contact{
+        background-color: var(--rd-gray-200);
+        padding: u.rem(12);
+        margin-top: u.rem(10);
+        display: grid;
+        gap: u.rem(20);
+        grid-template-columns: repeat(1, 1fr);
+        @include u.breakpoint(sm){
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @include u.breakpoint(md){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include u.breakpoint(lg){
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .inquiry{
+            background-color: var(--rd-white-color);
+            padding: u.rem(15);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: u.rem(10);
+            &_figure{
+                width: u.rem(70);
+                padding: u.rem(2);
+                img{
+                    max-width: 100%;
+                    display: block;
+                    object-fit: contain;
+                    margin: auto;
+                }
+            }
+            &_content{
+                width: calc(100% - u.rem(70));               
+                p{
+                    margin: 0;
+                    line-height: 1.3;
+                }
+                .title{
+                    margin-bottom: 0;
+                    p{
+                        font-weight: 700;
+                        color: var(--rd-text-dark-color);
+                        margin-bottom: u.rem(2);
+                        margin-top: 0;
+                    }
+                }
+                .emailAddress{
+                    text-align: right;
+                    margin-top: u.rem(6);
+                    a{
+                        font-weight: 600;
+                        color: var(--rd-orange-600);
+                    }
+                }
+            }
+        }
+    }
+} 

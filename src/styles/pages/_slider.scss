@@ -1,0 +1,73 @@
+@use '../utils' as u;
+.slider{  
+    .title{
+        h2{
+            position: relative;
+            margin-left: u.rem(10);
+            text-transform: uppercase;
+            color: var(--rd-text-color);
+            &::before{
+                content: '';
+                height: 60%;
+                width: u.rem(4);
+                background-color: var(--rd-orange-600);
+                position: absolute;
+                left: - u.rem(16);
+                top:20%;
+            }
+        }
+    }  
+        &__items{        
+            &__item{            
+                border:1px solid #ddd;
+                margin: u.rem(10) u.rem(5);
+                box-shadow:rgb(60 64 67 / 0%) 0px 1px 2px 0px, rgb(60 64 67 / 7%) 0px 1px 3px 1px;
+                padding: u.rem(10);
+                border-radius: u.rem(3);
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin-inline: auto;
+                    object-fit: contain;
+                }
+                .captions{
+                    text-align: center;
+                    margin-top: u.rem(20);
+                    p{
+                        font-weight: 500;
+                        font-size: u.rem(12);
+                        @include u.breakpoint-down(md){
+                             display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                &.models{
+                    height: u.rem(130);
+                    &.captions{
+                        margin-top: u.rem(10);
+                    }
+                }
+            }
+        }
+    .slick-slider{
+        .slick-prev{            
+            left:- u.rem(18);
+            border-radius: 50%;
+            &::before{
+                color: var(--rd-orange-600);
+            }
+        }
+        .slick-next{            
+            right: - u.rem(18);
+            border-radius: 50%;
+            &::before{
+                color: var(--rd-orange-600);
+            }
+        }
+    }
+}

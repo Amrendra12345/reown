@@ -1,0 +1,37 @@
+@use '../utils' as u;
+
+.table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: u.rem(15);
+  border:1px solid var(--rd-gray-300);
+  border-radius: 10px;
+  &>tbody{
+  &>tr{
+    &>th{
+        border:1px solid var(--rd-gray-300);
+        padding: u.rem(6);
+        vertical-align:top ; 
+        font-size: clamp(u.rem(12),2vw,u.rem(14));
+        font-weight: 700; 
+        color: var(--rd-text-dark-color);      
+    }
+    &>td{
+      border:1px solid var(--rd-gray-300);
+      padding: u.rem(6);
+      vertical-align:top ;   
+      font-size: clamp(u.rem(12),2vw,u.rem(14));
+      font-weight: 400;  
+      color:  var(--rd-text-dark-color);   
+  }
+  }
+    &.table-striped{
+          &>tbody{
+              tr:nth-child(odd){
+                  background-color: var(--rd-gray-100);
+              }
+          } 
+    }
+}
+}
+

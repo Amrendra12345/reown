@@ -1,0 +1,322 @@
+@use '../../utils' as u;
+.warrantyPolicy,.assuredBuyback,.returnPolicy,.additional_Info,.technicalDetails,.refurbished{
+    padding: u.rem(10);
+    .pageTitle{
+        text-align: center;
+        justify-content: center;
+        margin-bottom: u.rem(0);
+        p{
+            color: var(--rd-text-dark-color);
+            margin-bottom: 0;
+        }
+    }
+    .subTitle{
+        text-align: center;
+        margin-bottom: u.rem(10);
+        p{
+            font-weight: 500;
+            color: var(--rd-text-color);
+            font-size: u.rem(13); 
+        }
+    }
+    &__content{
+       margin-top: u.rem(5);
+        p{
+            color: var(--rd-text-dark-color);   
+            font-size: u.rem(13);         
+        }
+        .pageTitle{
+            justify-content: flex-start;
+        }
+        ol{
+            li{
+                font-size: u.rem(13); 
+                padding-left: u.rem(5);
+                color: var(--rd-text-dark-color);
+                &::marker{
+                    font-weight: 700;
+                }
+                .pageTitle{
+                    justify-content: flex-start;
+                    font-size: u.rem(13); 
+                }
+                .table-responsive{
+                    max-width: 100%;
+                    margin-top: u.rem(10);
+                    .table{
+                        &>thead{
+                            &>tr{
+                                th{
+                                    font-size: u.rem(12);
+                                }
+                            }
+                        }
+                        &>tbody{
+                            &>tr{
+                                &:nth-of-type(odd){
+                                    background-color: var(--rd-gray-100);
+                                }
+                                &>th{
+                                    font-size: u.rem(13);
+                                }
+                                &>td{
+                                    font-size: u.rem(12);
+                                    color: var(--rd-text-dark-color);
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                    @include u.breakpoint(sm){
+                        max-width: 60%;
+                    }
+                }
+                ol{
+                    list-style: lower-alpha;
+                    margin-top: 5px;
+                    li{
+                        &::marker{
+                            font-weight: 500;
+                        }
+                        padding-left: u.rem(5);
+                        ol{
+                            list-style: lower-roman;
+                            li{
+                                &::marker{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-responsive{
+       margin-top: u.rem(7);
+        .table{
+            &>tbody{              
+                &>tr{
+                    &:nth-of-type(odd){
+                        background-color: var(--rd-gray-100);                       
+                    }
+                    &>td{
+                        font-size: u.rem(12);
+                        border-color: transparent;
+                        &:nth-of-type(1){
+                            width: 20%;
+                            font-weight: 500;
+                        }
+                        &:nth-of-type(2){
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.returnPolicy{
+    .table{
+        margin-top: u.rem(6);
+        &>thead{            
+            &>tr{              
+                &>td{
+                    font-size: u.rem(12);
+                    font-weight: 600;
+                    padding-left: u.rem(8);
+                    border:1px solid var(--rd-border-color)
+                }
+            }
+        }
+        &>tbody{
+            &>tr{
+                &>td{
+                    font-size: u.rem(12);
+                }
+            }
+        }
+    }
+}
+.refurbished{
+    p{
+        margin-bottom: u.rem(3);
+    }
+}
+.refurbished{    
+    &__content{
+        .question{
+            p{
+            font-weight: 600;
+            }
+        }
+        .advantages{
+            &_content{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: u.rem(14);
+             &__items{                
+                .pageTitle{
+                    margin: u.rem(5) 0;
+                    p{
+                        text-transform: none;
+                    }
+                }
+                p{
+                    text-align: justify;
+                }
+             }
+            }
+        }
+    }
+}
+
+.assuredBuyback{
+    &__content{
+        img{
+            margin-inline: auto;
+            display: block;
+            object-fit: contain;
+            width: 100%;
+            max-height:u.rem(375);
+        }
+    }
+    &__guarantees{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: u.rem(10) u.rem(15);
+        .palans{
+            width: 50%;
+            .table-responsive{
+                .table{
+                    &>thead{
+                        &>tr{
+                            background-color: var(--rd-gray-100);
+                            &>td{
+                                border:1px solid var(--rd-border-color);
+                               &:nth-of-type(1){
+                                width: 60%;
+                                font-size: u.rem(12);
+                                font-weight: 500;
+                                padding:u.rem(5) u.rem(8);                               
+
+                               }
+                               &:nth-of-type(2){
+                                width: 40%;
+                                font-size: u.rem(12);
+                                font-weight: 500;
+                                padding-left: u.rem(8);
+                              
+                               }
+                            }
+                        }
+                    }
+                    &>tbody{
+                        &>tr{
+                            &:nth-of-type(odd){
+                                background-color: transparent;
+                            }
+                            &:nth-of-type(even){
+                                background-color: var(--rd-gray-100);
+                            }
+                            &>td{
+                                border-color: var(--rd-border-color);
+                               &:nth-of-type(1){
+                                width: 60%;
+                                font-size: u.rem(12);
+                                font-weight: 500;
+                                padding-left: u.rem(8);
+
+                               }
+                               &:nth-of-type(2){
+                                width: 40%;
+                                font-size: u.rem(12);
+                                font-weight: 500;
+                                padding-left: u.rem(8);
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .howtoWorks{
+        .table{
+            &>tbody{
+                &>tr{
+                    &>td{
+                        font-size: u.rem(12);
+                        strong{
+                            font-weight: 600;
+                        }
+                        &:nth-of-type(1){
+                            width: 26%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .question{
+        p{
+            font-size: u.rem(12);
+            font-weight: 600;
+            margin-bottom: u.rem(0);
+        }
+    }
+    b{
+        font-weight: 500;
+    }
+}
+
+.moreItems{
+    .pageTitle{
+        justify-content: center;
+        p{
+            color: var(--rd-text-dark-color);
+        }
+    }
+    &_content{
+        .slider{
+            .figure{
+                text-align: center;                
+                margin-left: u.rem(10);
+                img{
+                    width: 100%;
+                    height: u.rem(200);
+                    object-fit: contain;
+                    display: block;
+                    margin-inline: auto;
+                    padding: u.rem(5);
+                }
+                .caption{
+                    padding:u.rem(2) u.rem(5);
+                    border-top: 1px solid #ddd;
+                    .name{
+                        white-space: nowrap;
+                        max-width: 96%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: u.rem(12);
+                        color: var(--rd-text-dark-color);
+                        font-weight: 500;
+                        margin-bottom: u.rem(0);
+                    }
+                    .pageTitle{
+                        margin: u.rem(3);
+                        p{
+                            margin-bottom: 0;
+                        }
+                        svg{
+                            vertical-align: middle;
+                            margin-top: - u.rem(3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

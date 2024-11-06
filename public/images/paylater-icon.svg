@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<title>donation</title>
+	<defs>
+		<image  width="16" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAddQTFRFAAAA/qM0/ag2/LY9/Lg+/6U0/Z8y/Ko79rhV97xZ+7hF/Lc+/Lc+/Z0x+atG3MS329Xu4Nrx5tPN971b/Lc+/7VA/aIx/aAz3r+r2NPw8MeN88N64dnq5dTT+7lH/Lc9/J4x+aVD0Mfh3dn27cug9MJ24Nry39v3971d/Lc+/Z4x+aVD0Mfg3dn48MaJ5Nba3t3/39v2971c/Lc+/KUz/Z8z37+m1tX74dnp7Myo3t395tPO+7lG/Lc//Z0x+atC3sOu29Pp4dnr59HE+LxW/Lc++blA8pB+8pB985OA8Y188Ix4+pxF+6s797dQ+LtT+7hC/Lc+/Lc+8o9+85KA+6WM/amP/KeO+qOL95yG9JZ++J9o/LY9/Lc9/7lG8pB+85J//KiO/6+T/6+T/6+T/6+T/6+T/qyR8o9+8o9985SB9pmE8pB+85OA/KeO/q2S8Ix89pmF/qyR9pmF8Y599JSB/q2S/qyR+6SM/qyR/q2S+qKL95yG9JWB85OA+qOL/q6S/6+T/6+T/66U/66T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/6+T/62S/6+T/6+T/62P/7aStBo9RQAAAJ10Uk5TAAcdHwoBNcPp685QAzHo//////ZbAAO4////////2hMW4v////////gsF+P////////5LQS+////////3hU47f/////4ZAAMU2o4JlbQ8fHWXQQMr/3//vHh1WklDwALnv3/46/S4mUPZ7EWE7b9riIcGg5U0ucjIOz+7uDP1vv8vC4BAqn86fT+5WkKOdddHShHea3JkSMBAxIAAOYjFlYAAADTSURBVHicY2CAAUYmZhYGBGBlY+fg5OLmgQvw8vELCAoJi4hC+WLiEpJS0jKycvJQAQVFJWUVVTV1DU2ogJa2jq6evoGhkTFUwMTUzNzC0sraxhZmqJ29g6OTs4urG4jj7uHp5e3j6+cfEBgE4geHhIaFR0RGRcfExoH48QmJSUnJKalp6QwZmVnZDDm5eUlJSfkFhUXFJaWhZeUMFZVAflJVdU1tXX1DY1MzQ0trUlt7RydItKu7B2RGb1//hImTJk+ZOm36DLALZs6aDabnQBwEAOVqNSZsp7bOAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

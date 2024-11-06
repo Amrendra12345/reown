@@ -1,0 +1,192 @@
+
+@use '../../utils' as u;
+
+.reown-login{
+    background-color: var(--rd-gray-400);
+    position: fixed;
+    width: u.em(350);
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,.2), 0px 16px 24px 2px rgba(0,0,0,.14), 0px 6px 50px 5px rgba(10,10,10,.12);
+    height: 100vh;
+    top:0;
+    right: 0;
+    z-index: 99;
+    background: url('/images/login_bg.webp');
+    padding: 0 u.rem(5);
+    .close_login{
+        position: absolute;
+        top:u.rem(5);
+        left: u.rem(5);
+        cursor: pointer;
+        svg{
+            font-size: u.rem(30);
+        }
+        &:hover{
+            svg{
+                color: var(--rd-orange-600);
+            }
+        }
+    }
+    .logo{
+        margin-top: u.rem(50);
+        padding: u.rem(3) u.rem(10);
+        h4{
+            background-color: rgba(139, 130, 130, 0.82);
+            font-size: u.rem(20);
+            font-weight: 700;
+            color: rgba(0,0,0,0);
+            text-shadow: 0px 2px 3px rgba(255,255,255,.5);
+            background-clip: text;
+        }
+        img{
+            width: auto;
+            max-height: u.rem(30);           
+            margin-left: auto;         
+            display: block;
+            object-fit: contain;
+        }
+    }
+    .page_card{
+        margin-top: u.rem(60);
+        margin-left: auto;
+        position: relative;
+        padding-top: u.rem(40);
+        .userIcon{
+            text-align: center;
+            border:1px solid var(--rd-border-color);
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            position: absolute;
+            top:-25px;
+            left: 40%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            border-radius: 50%;
+            background-color: var(--rd-white-color);
+            transform: rotate(45deg);
+            svg{
+                font-size: u.rem(26);
+                transform: rotate(-45deg);
+                color: var(--rd-orange-600);
+            }
+        }
+       p{
+        padding-left: u.rem(10);
+       }
+       .inputBox{
+          label{
+             font-weight: 400;
+             color: var(--rd-text-dark-color);
+             a{
+                color: var(--rd-orange-600);
+             }
+          }
+       }
+       .next-btn{
+         padding: 0 u.rem(5);
+          .btn{
+            width: 100%;
+            padding: u.rem(6) u.rem(10);
+            text-transform: uppercase;
+            font-weight: 500;            
+          }
+       }       
+    }
+   &::before, &::after{
+      content:url('/images/login_sideBg.png');
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 57px;
+      height: 53px;
+      background-color: #4a49493b;
+      border-radius: 1px;
+   }
+   &::after{    
+        top:auto;
+        right: auto;   
+        bottom:0;
+        left: 0;        
+        padding-top: 1px;
+        width: 61px;
+   }
+   &.otp{
+      .logo{
+        margin-top: u.rem(70);
+      }
+      .page_card{
+        margin-top: u.rem(30);
+        margin-bottom: u.rem(10);
+        .pageTitle{
+            margin-top: u.rem(0);
+            p{
+                text-transform: none;
+                color: var(--rd-text-dark-color);
+                font-weight: 700;
+            }
+        }
+        p{
+            color: var(--rd-text-color);
+            font-weight: 500;
+            font-size: u.rem(13);
+            span{
+                color: var(--rd-orange-600);
+            }
+          }
+        .inputBox{
+           padding: 0 u.rem(10);
+            label{
+                font-size: u.rem(13);
+                font-weight: 500;
+                color: var(--rd-text-dark-color);
+                margin-bottom: u.rem(5);
+                display: block;
+                sup{
+                    color: var(--rd-orange-600);
+                    font-size: u.rem(14);
+                    
+                }
+            }
+            .otpInput{
+                div{
+                    display: flex;
+                    gap: u.rem(10);
+                    justify-content: flex-start;
+                    align-items: center;
+                    input{
+                        width: u.em(48) !important;
+                        height: u.em(48) !important;
+                        border-radius: 0 !important;
+                        border:1px solid var(--rd-border-color) !important;
+                        font-weight: 700;
+                        &:valid{
+                            border-color: var(--rd-orange-600);
+                        }
+                    }
+                }
+            }
+            a{
+                margin-top: u.rem(8);
+                font-size: u.rem(12);
+                color: var(--rd-orange-600);
+                font-weight: 500;
+                display: block;
+            }
+        }
+      }
+      
+   }
+   &.sigup{
+     p{
+       font-weight: 700;
+       color: var(--rd-text-dark-color);
+     }
+     #mobileNum{
+        font-weight: 600;
+        letter-spacing: 1px;
+     }
+   }
+}

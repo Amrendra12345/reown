@@ -1,0 +1,30 @@
+@use '../utils' as u;
+.breadcrumb{     
+    list-style-position: inside !important;
+    list-style: circle;
+    display: flex;
+    flex-wrap: wrap;
+    gap: u.rem(2) u.rem(8);
+    padding: u.rem(5) 0 0;
+    li{            
+        &::marker{
+         content:'\003E';       
+         color: var(--rd-text-color);
+        }
+        &:first-child{
+            &::marker{
+                content: none;
+            }
+        }
+        a{
+            padding-left: u.rem(5);
+            font-size:clamp(u.rem(12), 2vw, u.rem(14));
+            font-weight: 500;
+            color: var(--rd-text-color);            
+            &.active{
+                color: var(--rd-orange-600);
+            }
+        }
+        
+    }
+}

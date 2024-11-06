@@ -1,0 +1,29 @@
+@use 'functions' as f;
+
+$breakpoint:(
+    'xxs': f.em(300),
+    'xs': f.em(450),
+    'sm': f.em(600),
+    'md': f.em(920),
+    'lg': f.em(1200),
+    'xlg': f.em(1400)
+);
+$breakpoint-down:(
+    'xxs': f.em(299),
+    'xs': f.em(449),
+    'sm': f.em(599),
+    'md': f.em(919),
+    'lg': f.em(1199),
+    'xlg': f.em(1399)
+);
+
+@mixin breakpoint($size){
+    @media (min-width: map-get($breakpoint, $size)){
+        @content;
+    }
+}
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoint-down, $size)){
+        @content;
+    }
+}

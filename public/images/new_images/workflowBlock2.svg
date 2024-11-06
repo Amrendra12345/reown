@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<title>workflowBlock-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #ffffff } 
+		.s1 { opacity: .6;fill: #e5e5e5 } 
+		.s2 { fill: none;stroke: #f05d24;stroke-width: 4 } 
+		.s3 { fill: none;stroke: #2b3339;stroke-width: 3.6 } 
+	</style>
+	<path id="Shape 1" class="s0" d="m250 412c-89.59 0-162-72.41-162-162c0-89.59 72.41-162 162-162c89.59 0 162 72.41 162 162c0 89.59-72.41 162-162 162z" />
+	<g id="Layer">
+		<path id="Layer" class="s1" d="m266.13 413.95c-5.31 0.52-10.69 0.79-16.13 0.79c-90.98 0-164.74-73.76-164.74-164.74c0-90.98 73.76-164.74 164.74-164.74c5.44 0 10.82 0.27 16.13 0.79c-83.41 8.1-148.61 78.41-148.61 163.95c0 85.54 65.2 155.85 148.61 163.95z" />
+		<path id="Layer" class="s2" d="m117.52 152.07l249.35 214.03" />
+		<path id="Layer" class="s3" d="m250 414.74c-91.1 0-164.74-73.64-164.74-164.74c0-91.1 73.64-164.74 164.74-164.74c91.1 0 164.74 73.64 164.74 164.74c0 91.1-73.64 164.74-164.74 164.74z" />
+	</g>
+</svg>

@@ -1,0 +1,16 @@
+@use '../utils' as u;
+
+.laptopQc{
+    .page_card{
+        padding: u.rem(15) u.rem(25);
+        p{
+            color: var(--rd-text-dark-color);
+        }
+        .next-btn{
+            text-align: center;
+            .btn{
+                padding: u.rem(8) u.rem(15);
+            }
+        }
+    }
+}
