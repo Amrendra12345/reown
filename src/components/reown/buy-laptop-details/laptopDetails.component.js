@@ -101,8 +101,7 @@ const LaptopDetailsComponent = (props) => {
               <div className='page_card mb-1'>
                   <div className="search_breadcrumb">
                       <ul className="breadcrumb">
-                          <li><Link href="/"> Home </Link></li>
-                          <li><Link href="/reown"> Reown </Link></li>
+                          <li><Link href="/"> Home </Link></li>                         
                           <li><Link href="/buy-laptop"> Product List </Link></li>
                           <li><Link className="active" href={'/buy-laptop/'+createSlug(props.productDetails.product.product_title, props.productDetails.product.product_sku_id)}>{props.productDetails.product.product_title}</Link></li>
                       </ul>

@@ -115,8 +115,7 @@ const BuyLaptopNestedLayoutComponent = (props) => {
                 <div className="container">
                     <div className="page_card">
                         <ul className="breadcrumb">
-                            <li><Link href="/"> Home </Link></li>
-                            <li>{" "}<Link href="/reown"> Reown </Link>{" "}</li>
+                            <li><Link href="/"> Home </Link></li>                           
                             <li><Link className="active" href="/buy-laptop">Products List{" "}</Link>
                             </li>
                         </ul>

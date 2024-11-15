@@ -1,11 +1,12 @@
 import Carousel from 'react-bootstrap/Carousel';
 import styles from "./carousel.module.scss";
+import Image from 'next/image';
 const Carousel_home = (props) => {
   return (
 		<>
 			<Carousel className={styles.sliders}>
 					<Carousel.Item interval={8000}>
-						<img
+						<Image
 							className="img-fluid"
 							src="/images/mobile.webp"
 							width="920"
@@ -14,7 +15,7 @@ const Carousel_home = (props) => {
 						/>
 					</Carousel.Item>
 					<Carousel.Item interval={8000}>
-						<img
+						<Image
 							className="img-fluid"
 							width="920"
 							height="443"

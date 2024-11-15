@@ -33,22 +33,23 @@ const Header = (props) => {
 	useEffect(() => {
 		const headerHeight = ref_Header.current.getBoundingClientRect().height;
 		setHeaderSticky(headerHeight);
+		const isSticky = () => {
+			const scrollTop = window.scrollY;
+			const viewPortHeight = window.innerHeight;
+			const header = document.querySelector('.header');
+			if (scrollTop >= headerSticky) {
+				header.classList.add('sticky');
+			} else {
+				header.classList.remove('sticky');
+			}
+		}
 		window.addEventListener("scroll", isSticky);
         return () => {
             window.removeEventListener("scroll", isSticky);
         };
 	},[headerSticky])
 	
-	const isSticky = () => {
-		const scrollTop = window.scrollY;
-		const viewPortHeight = window.innerHeight;
-		const header = document.querySelector('.header');
-		if (scrollTop >= headerSticky) {
-			header.classList.add('sticky');
-		} else {
-			header.classList.remove('sticky');
-		}
-	}
+	
 	
 
 	const displayLoginSidebar = () => {
